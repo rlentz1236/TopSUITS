@@ -11,103 +11,105 @@ public class Commands : MonoBehaviour {
     public GameObject uiTelemetry;
     public GameObject uiProcedure;
     public GameObject uiProcedrueTitle;
-    public GameObject uiProcedureStepTitle;
+    public GameObject uiProcedureStepWarningDescript;
     public GameObject uiProcedureStepDescript;
-    private ProcedureObject procedureObject;
+    private ProcedureObject procedureObject = null;
     private Text txt;
+    private Image diagram;
 
     // Use this for initialization
     void Start () {
 
-        uiDiagram.SetActive(true);
+    }
+
+    void OnHide(string input)
+    {
+        Debug.Log("Entered On Hide input = " + input);
+
+        switch (input)
+        {
+            case ("Procedure"):
+                Debug.Log("Entered Case Procedure");
+                uiProcedure.SetActive(false);
+                break;
+            case ("Telemetry"):
+                Debug.Log("Entered Case Telemetry");
+                uiTelemetry.SetActive(false);
+                break;
+            case ("Animation"):
+                Debug.Log("Entered Case Animation");
+                uiAnimation.SetActive(false);
+                break;
+            case ("FixedDisplay"):
+                Debug.Log("Entered Case FixedDisplay");
+                uiFixedDisplay.SetActive(false);
+                break;
+            case ("Diagram"):
+                Debug.Log("Entered Case Diagram");
+                uiDiagram.SetActive(false);
+                break;
+            case ("HUD"):
+                Debug.Log("Entered Case HUD");
+                uiDiagram.SetActive(false);
+                uiFixedDisplay.SetActive(false);
+                uiAnimation.SetActive(false);
+                uiTelemetry.SetActive(false);
+                uiProcedure.SetActive(false);
+                break;
+            default:
+
+                Debug.Log("On Hide Failed Input = " + input);
+                break;
+        }
+    }
+
+    void OnShow(string input)
+    {
+        Debug.Log("Entered On Hide input = " + input);
+
+        switch (input)
+        {
+            case ("Procedure"):
+                Debug.Log("Entered Case Procedure");
+                uiProcedure.SetActive(true);
+                break;
+            case ("Telemetry"):
+                Debug.Log("Entered Case Telemetry");
+                uiTelemetry.SetActive(true);
+                break;
+            case ("Animation"):
+                Debug.Log("Entered Case Animation");
+                uiAnimation.SetActive(true);
+                break;
+            case ("FixedDisplay"):
+                Debug.Log("Entered Case FixedDisplay");
+                uiFixedDisplay.SetActive(true);
+                break;
+            case ("Diagram"):
+                Debug.Log("Entered Case Diagram");
+                uiDiagram.SetActive(true);
+                break;
+            case ("HUD"):
+                Debug.Log("Entered Case HUD");
+                uiDiagram.SetActive(true);
+                uiFixedDisplay.SetActive(true);
+                uiAnimation.SetActive(true);
+                uiTelemetry.SetActive(true);
+                uiProcedure.SetActive(true);
+                break;
+            default:
+
+                Debug.Log("On Hide Failed Input = " + input);
+                break;
+        }
+    }
+
+    void OnStartProcedure(string input)
+    {
+        Debug.Log("Entered On Start Procedure");
         uiProcedure.SetActive(true);
-    }
 
-    void OnHideProcedure()
-    {
-        Debug.Log("Entered On Hide Procedure");
-        uiProcedure.SetActive(false);
-    }
-
-    void OnShowProcedure()
-    {
-        Debug.Log("Entered On Show Procedure");
-        uiProcedure.SetActive(true);
-    }
-
-    void OnShowDiagram()
-    {
-        Debug.Log("Entered On Show Diagram");
-        uiDiagram.SetActive(true);
-    }
-
-    void OnHideDiagram()
-    {
-        Debug.Log("Entered On Hide Diagram");
-        uiDiagram.SetActive(false);
-    }
-    void OnShowTelemetry()
-    {
-        Debug.Log("Entered On Show Telemetry");
-        uiTelemetry.SetActive(true);
-    }
-
-    void OnHideTelemetry()
-    {
-        Debug.Log("Entered On Hide Telemetry");
-        uiTelemetry.SetActive(false);
-    }
-
-    void OnShowAnimation()
-    {
-        Debug.Log("Entered On Show animation");
-        uiAnimation.SetActive(true);
-    }
-
-    void OnHideAnimation()
-    {
-        Debug.Log("Entered On Hide animation");
-        uiAnimation.SetActive(false);
-    }
-
-    void OnShowFixedDisplay()
-    {
-        Debug.Log("Entered On Show fixed display");
-        uiFixedDisplay.SetActive(true);
-    }
-
-    void OnHideFixedDisplay()
-    {
-        Debug.Log("Entered On Hide fixed display");
-        uiFixedDisplay.SetActive(false);
-    }
-
-    void OnRestoreHUD()
-    {
-        Debug.Log("Entered restore hud");
-        uiDiagram.SetActive(true);
-        uiFixedDisplay.SetActive(true);
-        uiAnimation.SetActive(true);
-        uiTelemetry.SetActive(true);
-        uiProcedure.SetActive(true);
-    }
-
-    void OnKillHUD()
-    {
-        Debug.Log("Entered kill hud");
-        uiDiagram.SetActive(false);
-        uiFixedDisplay.SetActive(false);
-        uiAnimation.SetActive(false);
-        uiTelemetry.SetActive(false);
-        uiProcedure.SetActive(false);
-}
-
-    void OnStartDisableAlarm()
-    {
-        Debug.Log("Entered On Start Disbale Alarm");
-        uiProcedure.SetActive(true);
-
-        procedureObject = new ProcedureObject();
+        procedureObject = new ProcedureObject(input);
         txt = uiProcedrueTitle.GetComponent<Text>();
         txt.text = procedureObject.GetTitle();
 
@@ -115,37 +117,67 @@ public class Commands : MonoBehaviour {
 
         temp = procedureObject.OnNextStep();
 
-        txt = uiProcedureStepTitle.GetComponent<Text>();
-        txt.text = temp[0];
+        txt = uiProcedureStepWarningDescript.GetComponent<Text>();
+        txt.text = temp[2];
 
         txt = uiProcedureStepDescript.GetComponent<Text>();
-        txt.text = temp[1] + "\n" + temp[2];
+        txt.text = temp[0] + "\n\n" + temp[1];
+
+        diagram = uiDiagram.GetComponent<Image>();
+        diagram.sprite = (Sprite)Resources.Load<Sprite>("PC_Diagrams/" + temp[3]);
     }
 
     void OnNextStep()
     {
-        string[] temp;
+        if (procedureObject != null)
+        {
+            if (procedureObject.GetNumberSteps() > procedureObject.GetStepIndex() + 1)
+            {
+                string[] temp;
 
-        temp = procedureObject.OnNextStep();
+                temp = procedureObject.OnNextStep();
 
-        txt = uiProcedureStepTitle.GetComponent<Text>();
-        txt.text = temp[0];
+                txt = uiProcedureStepWarningDescript.GetComponent<Text>();
+                txt.text = temp[2];
 
-        txt = uiProcedureStepDescript.GetComponent<Text>();
-        txt.text = temp[1] + "\n" + temp[2];
+                txt = uiProcedureStepDescript.GetComponent<Text>();
+                txt.text = temp[0] + "\n\n" + temp[1];
+
+                diagram = uiDiagram.GetComponent<Image>();
+                diagram.sprite = (Sprite)Resources.Load<Sprite>("PC_Diagrams/" + temp[3]);
+            }
+            if (procedureObject.GetNumberSteps() == procedureObject.GetStepIndex() + 1)
+            {
+                //Show alert task has been completed
+                procedureObject = null;
+            }
+        }
     }
 
     void OnPreviousStep()
     {
-        string[] temp;
+        if (procedureObject != null)
+        {
+            if (procedureObject.GetStepIndex() != 0)
+            {
+                string[] temp;
 
-        temp = procedureObject.OnPreviousStep();
+                temp = procedureObject.OnPreviousStep();
 
-        txt = uiProcedureStepTitle.GetComponent<Text>();
-        txt.text = temp[0];
+                txt = uiProcedureStepWarningDescript.GetComponent<Text>();
+                txt.text = temp[2];
 
-        txt = uiProcedureStepDescript.GetComponent<Text>();
-        txt.text = temp[1] + "\n" + temp[2];
+                txt = uiProcedureStepDescript.GetComponent<Text>();
+                txt.text = temp[0] + "\n\n" + temp[1];
+
+                diagram = uiDiagram.GetComponent<Image>();
+                diagram.sprite = (Sprite)Resources.Load<Sprite>("PC_Diagrams/" + temp[3]);
+            }
+            if (procedureObject.GetStepIndex() == 0)
+            {
+                //show alert?
+            }
+        }
     }
 
 }

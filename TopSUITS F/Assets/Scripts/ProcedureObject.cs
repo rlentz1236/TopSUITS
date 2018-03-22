@@ -10,10 +10,26 @@ public class ProcedureObject {
 
     private int step_index;
 
-    public ProcedureObject()
+    private int num_steps;
+
+    public ProcedureObject(string input)
     {
         step_index = 0;
-        steps = disableAlarmProcedure();
+
+        switch (input)
+        {
+            case ("DisableAlarm"):
+                Debug.Log("Entered DisableAlarm Procedure Switch");
+                steps = disableAlarmProcedure();
+                break;
+            case ("BuildPC"):
+                Debug.Log("Entered Build PC Procedure Switch");
+                steps = buildPcProcedure();
+                break;
+            default:
+                Debug.Log("Procedure Object switch failed input = " + input);
+                break;
+        }
     }
 
     public string GetTitle()
@@ -71,6 +87,16 @@ public class ProcedureObject {
             return temp_step;
     }
 
+    public int GetNumberSteps()
+    {
+        return steps.Length;
+    }
+
+    public int GetStepIndex()
+    {
+        return step_index;
+    }
+
     private string[,] disableAlarmProcedure()
     {
         string[,] temp = new string[,] { 
@@ -101,6 +127,33 @@ public class ProcedureObject {
         };
         title = "Disable Alarm";
    
+        return temp;
+    }
+
+    private string[,] buildPcProcedure()
+    {
+        string[,] temp = new string[,] {
+            {"Step 1: Release CPU Latch","Push down and to the right on the CPU Latch. Once the Latch has been released pull the cover back to reveal the CPU Socket","CAUTION: Do not bend the pins located in the CPU Socket.","motherboardDiagramLabeledCPULatchStep","animation1"},
+            {"Step 2: Locate CPU Chip","Locate the CPU chip and make note of the notches on the sides.","","motherboardCPU","animation1"},
+            {"Step 3: Insert CPU Chip","Line the CPU chip notches up with the notches in the Socket. Then Gently Lay the CPU chip into the Socket.","Note: The golden arrow on the CPU chip should be at the bottom left corner.","motherboardInstallCPU","animation1"},
+            {"Step 4: Secure CPU Latch","Lay the latches cover over the CPU chip. Then push the latch down and hook it on the cover.","Caution: Make sure the latch is securely hooked before releasing.","motherboardLatchCPU","animation1"},
+            {"Step 5: Locate RAM Stick","Locate the RAM Stick and make note of the single notch on the bottom side.","","motherboardRAM","animation1"},
+            {"Step 6: Locate RAM Slot","Locate the Right Most RAM slot on the Motherboard. Make note of the notch in the slot.","","motherboardDiagramLabeledInsertRamStep","animation1"},
+            {"Step 7: Release RAM Slot Tabs","Push the White Tabs back away from the RAM slot.","","motherboardRamSlotTabs","animation1"},
+            {"Step 8: Insert RAM Stick","Slide the RAM Stick into the RAM slot. Then firmly push down on each end of the RAM Stick until you hear a click.","CAUTION: The RAM Stick should not provide any resistance. If it does, check to make sure the notches line up.","motherboardRamNotSnapped","animation1"},
+            {"Step 9: Double Check RAM","Look at each white Tab and make sure it has securely locked the RAM into place.","","motherboardRamInserted","animation1"},
+            {"Step 10: Locate CPU Fan","Locate the CPU Fan and make note of the white plastic tabs at the bottom of the Fan.","","motherboardCPUFan","animation1"},
+            {"Step 11: Install CPU Fan Part 1","Line up the 4 plastic tabs on the CPU Fan with the holes next to the CPU Socket.","","motherboardInstallCPUFan","animation1"},
+            {"Step 12: Install CPU Fan Part 2","Press down on each black tab till it snaps into place. As shown in the diagram.","","motherboardInstallCPUFan2","animation1"},
+            {"Step 13: Connect Fan Power","Locate the cable coming off of the CPU fan. Then plug the cable into the power port above the CPU Socket.","Note: Make sure to line up the slots on the connector and port.","motherboardDiagramLabeledCPUFanPowerStep","animation1"},
+            {"Step 14: Locate Motherboard Power Connector","Locate the Motherboards Main Power Connector that is attached to the power supply.","","motherboardMainPowerConnector","animation1"},
+            {"Step 15: Install Motherboard Power Connector","Plug Motherboard power connector into the Main Power Port.","","motherboardDiagramLabeledMotherboardPowerStep","animation1"},
+            {"Step 16: Locate CPU Power Connector","Locate the CPU Power Connector that is attached to the power supply.","","motherboardCPUPowerConnector","animation1"},
+            {"Step 17: Install CPU Power Connector","Plug CPU power connector into the CPU Power Port.","","motherboardDiagramLabeledCPUPowerStep","animation1"},
+            {"Step 18: Final Step","Locate and press the Power button on the Motherboards right side","","motherboardDiagramLabeledPowerButtonStep","animation1"}
+        };
+        title = "Build a PC";
+
         return temp;
     }
 }

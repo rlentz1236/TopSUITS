@@ -574,7 +574,7 @@ PlayerSettings:
   platformCapabilities:
     WindowsStoreApps:
       HumanInterfaceDevice: False
-      InternetClient: False
+      InternetClient: True
       InternetClientServer: False
       Microphone: True
       PrivateNetworkClientServer: False

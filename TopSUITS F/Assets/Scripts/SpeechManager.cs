@@ -23,79 +23,85 @@ public class SpeechManager : MonoBehaviour
         keywords.Add("Show Diagram", () =>
         {
             Debug.Log("entered show diagram keyword");
-            this.BroadcastMessage("OnShowDiagram");
+            this.BroadcastMessage("OnShow", "Diagram");
         });
 
         keywords.Add("Hide Diagram", () =>
         {
             Debug.Log("entered hide diagram keyword");
-            this.BroadcastMessage("OnHideDiagram");
+            this.BroadcastMessage("OnHide", "Diagram");
         });
 
         keywords.Add("Show Procedure", () =>
         {
             Debug.Log("entered show Procedure keyword");
-            this.BroadcastMessage("OnShowProcedure");
+            this.BroadcastMessage("OnShow", "Procedure");
         });
 
         keywords.Add("Hide Procedure", () =>
         {
             Debug.Log("entered hide Procedure keyword");
-            this.BroadcastMessage("OnHideProcedure");
+            this.BroadcastMessage("OnHide", "Procedure");
         });
 
         keywords.Add("Show Telemetry", () =>
         {
             Debug.Log("entered show Telemetry keyword");
-            this.BroadcastMessage("OnShowTelemetry");
+            this.BroadcastMessage("OnShow", "Telemetry");
         });
 
         keywords.Add("Hide Telemetry", () =>
         {
             Debug.Log("entered hide Telemetry keyword");
-            this.BroadcastMessage("OnHideTelemetry");
+            this.BroadcastMessage("OnHide", "Telemetry");
         });
 
         keywords.Add("Show Animation", () =>
         {
             Debug.Log("entered show Animation keyword");
-            this.BroadcastMessage("OnShowAnimation");
+            this.BroadcastMessage("OnShow", "Animation");
         });
 
         keywords.Add("Hide Animation", () =>
         {
             Debug.Log("entered hide Animation keyword");
-            this.BroadcastMessage("OnHideAnimation");
+            this.BroadcastMessage("OnHide", "Animation");
         });
 
         keywords.Add("Show Fixed Display", () =>
         {
             Debug.Log("entered show Fixed Display keyword");
-            this.BroadcastMessage("OnShowFixedDisplay");
+            this.BroadcastMessage("OnShow", "FixedDisplay");
         });
 
         keywords.Add("Hide Fixed Display", () =>
         {
             Debug.Log("entered hide Fixed Display keyword");
-            this.BroadcastMessage("OnHideFixedDisplay");
+            this.BroadcastMessage("OnHide", "FixedDisplay");
         });
 
         keywords.Add("Kill HUD", () =>
         {
             Debug.Log("entered show kill hud keyword");
-            this.BroadcastMessage("OnKillHUD");
+            this.BroadcastMessage("OnHide", "HUD");
         });
 
         keywords.Add("Restore HUD", () =>
         {
             Debug.Log("entered hide restore hud keyword");
-            this.BroadcastMessage("OnRestoreHUD");
+            this.BroadcastMessage("OnShow", "HUD");
         });
 
         keywords.Add("Start Disable Alarm Procedure", () =>
         {
             Debug.Log("entered start disable alarm procedure keyword");
-            this.BroadcastMessage("OnStartDisableAlarm");
+            this.BroadcastMessage("OnStartProcedure", "DisableAlarm");
+        });
+
+        keywords.Add("Start Build PC Procedure", () =>
+        {
+            Debug.Log("entered start build pc procedure keyword");
+            this.BroadcastMessage("OnStartProcedure", "BuildPC");
         });
 
         keywords.Add("Next Step", () =>

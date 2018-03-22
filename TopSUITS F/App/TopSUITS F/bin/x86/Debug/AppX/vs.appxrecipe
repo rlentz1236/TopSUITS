@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>4881248DED367EE41AE483483AF9C1DD7D72804D083A7C9213EDBFEA3F0BC5E4</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>FBA2F802266A107712F3E5A2E30D7507AA7A32A8E16346EBB1B59C84E741961D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>TopSUITSF_1.0.0.0_x86__pzq3xp76mxafg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>TopSUITSF_pzq3xp76mxafg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>TopSUITSF</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-16T03:52:42.660</Modified>
+      <Modified>2018-03-21T16:13:36.183</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\bin\x86\Debug\TopSUITS F.exe">
       <PackagePath>entrypoint\TopSUITS F.exe</PackagePath>
-      <Modified>2018-03-16T03:52:28.234</Modified>
+      <Modified>2018-03-21T16:13:20.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-03-16T03:51:58.279</Modified>
+      <Modified>2018-03-21T16:12:28.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -555,15 +555,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-03-16T03:51:11.171</Modified>
+      <Modified>2018-03-21T16:11:44.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-03-16T03:51:10.162</Modified>
+      <Modified>2018-03-21T16:11:42.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-03-16T03:51:08.659</Modified>
+      <Modified>2018-03-21T16:11:41.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -571,31 +571,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-03-16T03:51:11.169</Modified>
+      <Modified>2018-03-21T16:11:44.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-03-16T03:51:10.429</Modified>
+      <Modified>2018-03-21T16:11:43.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\resources.assets">
+      <PackagePath>Data\resources.assets</PackagePath>
+      <Modified>2018-03-21T16:11:43.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-03-16T03:51:10.828</Modified>
+      <Modified>2018-03-21T16:11:43.750</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2018-03-16T03:51:08.642</Modified>
+      <Modified>2018-03-21T16:11:41.286</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\resources.assets.resS">
+      <PackagePath>Data\resources.assets.resS</PackagePath>
+      <Modified>2018-03-21T16:11:43.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-03-16T03:51:10.825</Modified>
+      <Modified>2018-03-21T16:11:43.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-03-16T03:51:58.226</Modified>
+      <Modified>2018-03-21T16:12:28.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-03-16T03:51:58.229</Modified>
+      <Modified>2018-03-21T16:12:28.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.16299.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -608,215 +616,215 @@
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-16T03:52:29.041</Modified>
+      <Modified>2018-03-21T16:13:21.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.162</Modified>
+      <Modified>2018-03-21T16:13:33.905</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.185</Modified>
+      <Modified>2018-03-21T16:13:33.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.206</Modified>
+      <Modified>2018-03-21T16:13:33.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.246</Modified>
+      <Modified>2018-03-21T16:13:33.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.264</Modified>
+      <Modified>2018-03-21T16:13:34.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.281</Modified>
+      <Modified>2018-03-21T16:13:34.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.314</Modified>
+      <Modified>2018-03-21T16:13:34.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.338</Modified>
+      <Modified>2018-03-21T16:13:34.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.359</Modified>
+      <Modified>2018-03-21T16:13:34.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.376</Modified>
+      <Modified>2018-03-21T16:13:34.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.403</Modified>
+      <Modified>2018-03-21T16:13:34.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.424</Modified>
+      <Modified>2018-03-21T16:13:34.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.443</Modified>
+      <Modified>2018-03-21T16:13:34.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.460</Modified>
+      <Modified>2018-03-21T16:13:34.231</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.482</Modified>
+      <Modified>2018-03-21T16:13:34.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.502</Modified>
+      <Modified>2018-03-21T16:13:34.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.521</Modified>
+      <Modified>2018-03-21T16:13:34.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.542</Modified>
+      <Modified>2018-03-21T16:13:34.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.569</Modified>
+      <Modified>2018-03-21T16:13:34.348</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.587</Modified>
+      <Modified>2018-03-21T16:13:34.369</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.611</Modified>
+      <Modified>2018-03-21T16:13:34.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.629</Modified>
+      <Modified>2018-03-21T16:13:34.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.647</Modified>
+      <Modified>2018-03-21T16:13:34.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.677</Modified>
+      <Modified>2018-03-21T16:13:34.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.699</Modified>
+      <Modified>2018-03-21T16:13:34.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.717</Modified>
+      <Modified>2018-03-21T16:13:34.518</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.734</Modified>
+      <Modified>2018-03-21T16:13:34.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.415</Modified>
+      <Modified>2018-03-21T16:13:34.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.461</Modified>
+      <Modified>2018-03-21T16:13:34.897</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.505</Modified>
+      <Modified>2018-03-21T16:13:34.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.529</Modified>
+      <Modified>2018-03-21T16:13:34.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.549</Modified>
+      <Modified>2018-03-21T16:13:34.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.567</Modified>
+      <Modified>2018-03-21T16:13:34.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.596</Modified>
+      <Modified>2018-03-21T16:13:35.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.613</Modified>
+      <Modified>2018-03-21T16:13:35.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.647</Modified>
+      <Modified>2018-03-21T16:13:35.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.666</Modified>
+      <Modified>2018-03-21T16:13:35.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.684</Modified>
+      <Modified>2018-03-21T16:13:35.119</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.711</Modified>
+      <Modified>2018-03-21T16:13:35.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-03-16T03:51:37.638</Modified>
+      <Modified>2018-03-21T16:12:08.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.748</Modified>
+      <Modified>2018-03-21T16:13:35.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.766</Modified>
+      <Modified>2018-03-21T16:13:35.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.833</Modified>
+      <Modified>2018-03-21T16:13:35.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.879</Modified>
+      <Modified>2018-03-21T16:13:35.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2018-03-16T03:52:41.936</Modified>
+      <Modified>2018-03-21T16:13:35.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-03-16T03:52:42.035</Modified>
+      <Modified>2018-03-21T16:13:35.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2018-03-16T03:52:42.054</Modified>
+      <Modified>2018-03-21T16:13:35.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2018-03-16T03:52:42.087</Modified>
+      <Modified>2018-03-21T16:13:35.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-03-16T03:52:42.114</Modified>
+      <Modified>2018-03-21T16:13:35.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-03-16T03:52:42.196</Modified>
+      <Modified>2018-03-21T16:13:35.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-03-16T03:52:40.118</Modified>
+      <Modified>2018-03-21T16:13:33.881</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\bin\x86\Debug\Core\TopSUITS F.exe">
       <PackagePath>TopSUITS F.exe</PackagePath>
-      <Modified>2018-03-16T03:52:42.654</Modified>
+      <Modified>2018-03-21T16:13:36.177</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
