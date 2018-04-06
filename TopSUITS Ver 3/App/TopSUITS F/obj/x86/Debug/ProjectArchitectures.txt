@@ -1,0 +1,2 @@
+C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\Owner\Documents\Unity Archived Projects\TopSUITS Demo\TopSUITS F\App\TopSUITS F\TopSUITS F.csproj;x86
